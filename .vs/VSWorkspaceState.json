@@ -1,9 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\node_modules\\bootstrap",
+    "\\node_modules\\bootstrap\\dist",
+    "\\node_modules\\bootstrap\\dist\\css",
     "\\src",
-    "\\src\\app"
+    "\\src\\app",
+    "\\src\\app\\server",
+    "\\src\\app\\servers",
+    "\\src\\app\\warningAlert",
+    "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\app.module.ts",
+  "SelectedNode": "\\src\\app\\warningAlert\\warningAlert.component.css",
   "PreviewInSolutionExplorer": false
 }
