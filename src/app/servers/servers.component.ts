@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-servers',
@@ -6,10 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
+  allowNewServer = false;
+  serverCreationStatus = "No server was created!";
+  serverName = 'this second input bar implements 2-way-databinding';
 
-  constructor() { }
+  constructor() {
+    setTimeout(() => { this.allowNewServer = true; },6000);
+  }
 
   ngOnInit() {
+  }
+
+  onCreateServer() {
+    this.serverCreationStatus = "Server was created!! Its name is " + this.serverName;
+  }
+  onUpdateServerName(event: Event) {
+    //console.log(event);
+    this.serverName = (<HTMLInputElement>event.target).value;
   }
 
 }

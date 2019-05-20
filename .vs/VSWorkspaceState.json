@@ -1,16 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\node_modules\\bootstrap",
-    "\\node_modules\\bootstrap\\dist",
-    "\\node_modules\\bootstrap\\dist\\css",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\server",
-    "\\src\\app\\servers",
-    "\\src\\app\\warningAlert",
-    "\\src\\environments"
+    "\\src\\app\\practice-assignment-two"
   ],
-  "SelectedNode": "\\src\\app\\warningAlert\\warningAlert.component.css",
+  "SelectedNode": "\\src\\app\\practice-assignment-two\\practice-assignment-two.component.ts",
   "PreviewInSolutionExplorer": false
 }
