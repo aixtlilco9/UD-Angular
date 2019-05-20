@@ -1,4 +1,4 @@
-﻿<label>Server Name</label>
+<label>Server Name</label>
 <input type="text" 
        class="form-control" 
        (input)="onUpdateServerName($event)"/>
@@ -15,7 +15,9 @@
 
 <!--<p [innerText]="allowNewServer"></p>-->
 
-<p>{{serverCreationStatus}}</p>
+<!-- the below P tag was commented to apply the ngif directive -->
+<!--<p>{{serverCreationStatus}}</p>-->
+<p *ngIf="serverCreated">Server was created, server name is {{serverName}}</p>
 
 <app-server></app-server>
 
