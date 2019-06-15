@@ -3,8 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\practice-assignment-two"
+    "\\src\\app\\practice-assignment-two",
+    "\\src\\app\\server"
   ],
-  "SelectedNode": "\\src\\app\\practice-assignment-two\\practice-assignment-two.component.ts",
+  "SelectedNode": "\\src\\app\\server\\server.component.ts",
   "PreviewInSolutionExplorer": false
 }

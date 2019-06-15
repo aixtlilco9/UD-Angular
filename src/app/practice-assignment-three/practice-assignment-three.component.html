@@ -1,0 +1,57 @@
+<!--
+  1)Add a button which says 'display details'
+  2)Add a paragraph with any content of our choice
+  3)Toggle the displaying of the paragraph with
+  the button created in the first step
+  4)log all button clicks in an array and output
+  that array below the secret paragrapgh
+  (maybe log timestamp or simply an incrementing number)
+  5)Starting at the 5th log item, give all future log item a blue background (via ngStyle)
+  and white color (ngClass)
+
+
+
+-->
+
+<div class="container">
+  <h2>Asignment 3 </h2>
+  <ol>
+    <li>Add a button which says 'display details'</li>
+    <li>Add a paragraph with any content of our choice</li>
+    <li>
+      Toggle the displaying of the paragraph with
+      the button created in the first step
+    </li>
+    <li>
+      log all button clicks in an array and output
+      that array below the secret paragrapgh
+      (maybe log timestamp or simply an incrementing number)
+    </li>
+    <li>
+      Starting at the 5th log item, give all future log item a blue background (via ngStyle)
+      and white color (ngClass)
+    </li>
+
+  </ol>
+
+  <button class="btn btn-primary"
+          (click)="onClickDisplayBtn()">
+    Display Details
+  </button>
+
+  <!--<p>  this was initially added t see if my T/F variable worked{{displayPara}}</p>-->
+
+
+  <p *ngIf="displayPara">
+    This is a secret message paragraph
+    initially it will be shown, after clicking the button above
+    however it shall vanish!!!
+  </p>
+
+  <p *ngFor="let click of clicksArray"
+     [ngStyle]="{backgroundColor: getClickCount()}"
+     [ngClass]="{online:numClicks >=5}">{{click}}</p>
+
+  
+
+</div>

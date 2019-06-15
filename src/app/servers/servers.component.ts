@@ -10,6 +10,7 @@ export class ServersComponent implements OnInit {
   serverCreationStatus = "No server was created!";
   serverName = 'this second input bar implements 2-way-databinding';
   serverCreated = false;
+  
 
   constructor() {
     setTimeout(() => { this.allowNewServer = true; },6000);
