@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
   //styleUrls: ['./practice-assignment-three.component.css']
 })
 export class PracticeAssignmentThreeComponent {
-  clicksArray = [,];
+  clicksArray = [,];//this here is creating a 2d array no specific size given
   numClicks = 0;
   displayPara = true;
 
@@ -28,7 +28,7 @@ export class PracticeAssignmentThreeComponent {
   }
 
   getClickCount() {
-    return this.numClicks >= 5 ? 'cyan' : 'green';
+    return this.numClicks >= 5 ? 'cyan' : 'transparent';
   }
 
 }

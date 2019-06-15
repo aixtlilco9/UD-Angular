@@ -48,9 +48,10 @@
     however it shall vanish!!!
   </p>
 
-  <p *ngFor="let click of clicksArray"
-     [ngStyle]="{backgroundColor: getClickCount()}"
-     [ngClass]="{online:numClicks >=5}">{{click}}</p>
+  <div *ngFor="let click of clicksArray, let i = index"
+     [ngStyle]="{backgroundColor: i >= 9 ? 'cyan' : 'green'}"
+     [ngClass]="{online:i >= 9}"
+     >{{click}}</div>
 
   
 
